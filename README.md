@@ -3,7 +3,7 @@
 
 
 <h1> 소개 </h1>
-유튜브(U) + 학습(Learning) + 친구(Mate) 를 합친 ULearnigMate입니다.
+유튜브(U) + 학습(Learning) + 친구(Mate) 를 합친 U-LearnigMate입니다.
 
 <h2> About </h2>
 너(U)튜브로 자기계발하고 싶은 당신!
