@@ -1,8 +1,8 @@
 ---
 name: Error Handling Card
 about: Error Handling
-title: ''
-labels: ''
+title: "[HowToFix]"
+labels: Error Handling
 assignees: ''
 
 ---
@@ -19,5 +19,4 @@ assignees: ''
 // 코드가 들어가도 좋아요!
  ```
 ### 에러 핸들링을 위해 참고한 레퍼런스 링크
- 링크: [google][googlelink]
- [googlelink]: https://google.com
+ - google: https://google.com
