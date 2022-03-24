@@ -24,14 +24,14 @@
 - 학습 친구와 서로 공부한 내용을 작성하여 학습 친구와 서로 공유할 수 있어요.
 
 <h2> 구성원 </h2>
-<h3> Team 3K1L </h3>
+<h3> Code9 </h3>
 
 |이름|포지션|
 |---|---|
 |박재영|:fire: Front-end|
 |이희수|:fire: Front-end|
 |윤재은|:razor: Back-end|
-|윤충현|:razor: Back-end|
+|윤충효|:razor: Back-end|
   
 <h2>사용한 스택 목록<h2>
 
