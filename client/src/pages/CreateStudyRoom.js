@@ -1,5 +1,11 @@
+import CreateStudyRoomList from '../components/CreateStudyRoomList';
+
 const CreateStudyRoom = () => {
-    return <div>CreateStudyRoom Page</div>;
-  };
-  
-  export default CreateStudyRoom;
+  return (
+    <div>
+      <CreateStudyRoomList />
+    </div>
+  );
+};
+
+export default CreateStudyRoom;

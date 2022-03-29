@@ -1,5 +1,11 @@
+import StudyRoomDetail from '../components/StudyRoomComponents/StudyRoomDetail';
+
 const StudyRoom = () => {
-    return <div>StudyRoom Page</div>;
-  };
-  
-  export default StudyRoom;
+  return (
+    <div>
+      <StudyRoomDetail />
+    </div>
+  );
+};
+
+export default StudyRoom;

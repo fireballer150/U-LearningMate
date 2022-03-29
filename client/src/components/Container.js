@@ -7,12 +7,8 @@ const MenuContainer = styled.div`
   min-height: 690px;
 `;
 
-const Menu = () => {
-  return (
-    <MenuContainer>
-      <h1>container</h1>
-    </MenuContainer>
-  );
+const Container = () => {
+  return <MenuContainer></MenuContainer>;
 };
 
-export default Menu;
+export default Container;

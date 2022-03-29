@@ -1,5 +1,11 @@
+import StudyRoomList from '../components/MainComponents/StudyRoomList';
+
 const Main = () => {
-    return <div>Main Page</div>;
-  };
-  
-  export default Main;
+  return (
+    <div>
+      <StudyRoomList />
+    </div>
+  );
+};
+
+export default Main;
