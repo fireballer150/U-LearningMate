@@ -171,7 +171,7 @@ const responseGoogle = (response) => {
               {/* <LoginBtn onClick={handleLogin}>LOGIN</LoginBtn> */}
               {/* <JoinBtn onClick={handleSignup}>회원가입</JoinBtn> */}
               <GoogleLogin
-              clientId="133857767007-bbfmnq7mf9t27c3ugkm10ukf0l5cgqdb.apps.googleusercontent.com"
+              clientId={`${process.env.REACT_APP_CLIENTID}`}
               buttonText="구글로 LOGIN 시작하기"
               onSuccess={responseGoogle}
               onFailure={responseGoogle}
