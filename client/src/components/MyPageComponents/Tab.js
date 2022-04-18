@@ -6,7 +6,8 @@ import ContentsNote from './contents-note';
 // TODO: Styled-Component 라이브러리를 활용해 TabMenu 와 Desc 컴포넌트의 CSS를 구현합니다.
 
 const TabMenu = styled.ul`
-  background-color: #dcdcdc;
+  padding: 30px;
+  background-color: salmon;
   color: rgba(73, 73, 73, 0.5);
   font-weight: bold;
   font-size: 30px;
@@ -15,20 +16,32 @@ const TabMenu = styled.ul`
   justify-items: center;
   justify-content: space-evenly;
   align-items: center;
+  border-radius: 10px;
   list-style: none;
   margin-bottom: 7rem;
-
+  color: khaki;
+  margin: 0 auto;
+  width:90%;
   .submenu {
     ${'이건 뭐하는거지' /* 기본 Tabmenu 에 대한 CSS를 구현합니다. */}
   }
 
   .focused {
-    background-color: skyblue;
-  }
+    background-color: blanchedalmond;
+    color: purple;
+    padding: 10px;
+    border: 3px solid palevioletred;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px khaki;
+
+
+    &:hover {
+    transform: translateY(-5px);
+  };
 
   & div.desc {
     text-align: center;
-  }
+  }}
 `;
 
 const Desc = styled.div`
@@ -40,9 +53,9 @@ export const Tab = () => {
   // currentTab 상태와 currentTab을 갱신하는 함수가 존재해야 하고, 초기값은 0 입니다.
   const [currentTabindex,setCurrentTabindex] = useState(0);
   const menuArr = [
-    { name: '호스트내역', content: <ContentsHost/> },
-    { name: '메이트내역', content: <ContentsMate/> },
-    { name: '나의공부노트', content: <ContentsNote/> },
+    { name: '  <👫HOST내역>  ', content: <ContentsHost/> },
+    { name: '<👫MATE내역>', content: <ContentsMate/> },
+    { name: ' <📖공부노트>', content: <ContentsNote/> },
   ];
 
   const selectMenuHandler = (index) => {

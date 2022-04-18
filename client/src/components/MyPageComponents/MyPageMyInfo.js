@@ -1,26 +1,36 @@
-import styled from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import { useState, useEffect } from 'react';
 import { Link, Redirect } from "react-router-dom";
 
+const GlobalStyle = createGlobalStyle`
+  body {
+    background: #e9ecef;
+  }
+`;
 const JoinBtn = styled.button`
   display: block;
   background: #ffffff;
-  border: 1px solid #000;
+  border: 2px solid red;
   width: 100%;
   height: 51px;
   margin: 19px 0 8px;
   text-decoration: none;
+  font-weight: 500;
+  
   &:hover {
     background: #aaa;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    
   }
 `;
 const ListContainer = styled.div`
   max-width: 700px;
-  margin: 100px auto 100px;
+  margin: 10px auto 100px;
   text-align: center;
   border: 1px solid;
-  box-shadow: 3px 3px 3px 3px gray;
+  box-shadow: 3px 3px 3px 3px red;
+  color: aliceblue;
+  background-color: salmon;
 `;
 const RowGroup = styled.div`
   font-family: Dotum, "돋움", Helvetica, sans-serif;
@@ -43,10 +53,12 @@ const Box = styled.input`
   position: relative;
   width: 100%;
   height: 51px;
-  border: solid 1px #dadada;
+  border: solid 1px red;
+  border-radius: 5px;
   padding: 10px 110px 10px 14px;
   box-sizing: border-box;
-  z-index:-1;
+  /* z-index:1; */
+  background-color: blanchedalmond;
 `;
 const Title2 = styled.h3`
   display: inline-block;
@@ -55,19 +67,62 @@ const Title2 = styled.h3`
   font-weight: 700;
   text-align:left;
 `;
+const Box1 = styled.button`
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  width: 20%;
+  height: 51px;
+  border: solid 3px red;
+  padding: 10px 10px 10px 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: aliceblue;
+  background-color: black;
+  box-shadow: 3px 3px 3px 3px #e2a3ae;
+  margin-right: 3rem;
+  text-decoration: none;
+
+  &:hover {
+    /* text-decoration: underline; */
+    background: #222;
+    transform: translateY(-3px);
+    text-decoration: none;
+  }
+  &:active {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+  }
+  & + & {
+    margin-top: 20px;
+    text-decoration: none;
+  }
+
+`;
+const BoxWrapper = styled.div`
+  margin: 50px 50px 0px 700px;
+  padding: .5rem;
+`;
 const Myinfolist = () => {
 
   return (
     <>
-      <ListContainer>
+    <GlobalStyle />
+    <BoxWrapper>
           <Link to="/mypage/myinfo">
-          <Title2>회원정보수정</Title2>
+          <Box1>✍️회원정보수정</Box1>
           </Link>
           <Link to="/mypage/mylist">
-          <Title2>/작성,신청내역 관리</Title2>
+          <Box1>📋내역 관리</Box1>
           </Link>
+    </BoxWrapper>
+      <ListContainer>
         <div>
             <RowGroup>
+            <Title>{}님</Title>
             <Title>이메일</Title>
                 <Box
                     type="email"

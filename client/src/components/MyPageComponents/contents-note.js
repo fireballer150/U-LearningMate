@@ -13,15 +13,17 @@ const Inner = styled.div`
   margin: 0 auto;
   position: relative;
   box-sizing: border-box;
-  /* background: blue; */
+  background: salmon;
+  justify-content: center;
 `;
 
 const Box = styled.input`
   display: block;
   position: relative;
-  width: 30%;
+  width: 50%;
   height: 51px;
   border: solid 1px #dadada;
+  border-radius: 5px;
   padding: 10px 110px 10px 14px;
   box-sizing: border-box;
   /* margin-right: 20px; */
@@ -44,10 +46,9 @@ const Subject = styled.div`
 const ContentsBlock = styled.div`
   width: 700px;
   height: 768px;
-
   position: relative; /* 추후 박스 하단에 추가 버튼을 위치시키기 위한 설정 */
-  background: white;
-  border-radius: 16px;
+  background: blanchedalmond;
+  /* border-radius: 16px; */
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.04);
 
   margin: 0 auto; /* 페이지 중앙에 나타나도록 설정 */
@@ -69,6 +70,7 @@ const RowGroup = styled.div`
 `;
 
 const ContentBox = styled.div`
+  color: black;
   position: relative;
   width: 100%;
   height: 51px;
@@ -77,7 +79,7 @@ const ContentBox = styled.div`
   box-sizing: border-box;
   /* margin-right: 20px; */
   &:disabled {
-    background: #ffffff;
+    /* background: #ffffff; */
   }
   /* & + & {
     margin-left: 20px;
