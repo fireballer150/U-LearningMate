@@ -85,7 +85,7 @@ const LoginModal = () => {
     
     dispatch(loginStart(email,password));
     console.log("로그인스타트함수만 써도 안에 디스패치 있어서될것 같은데",loginStart(email,password))
-    // console.log("$$$$$$$$$$$작동하나?",indexInfo.IsLoginBoolean)
+    console.log("$$$$$$$$$$$작동하나?",indexInfo.IsLoginBoolean)
     // setTimeout(function(){if(indexInfo.IsLoginBoolean === true){
     //   setIsLogin(true)
     //   setIsOpen(false)
